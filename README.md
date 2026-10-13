@@ -1,75 +1,29 @@
-# Nuxt Minimal Starter
+# DAW26L
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Proiect de laborator realizat cu [Nuxt](https://nuxt.com) și [Prisma](https://www.prisma.io).
 
-## Setup
+## Pornirea proiectului
 
-Make sure to install dependencies:
+1. **Descarcă proiectul de pe GitHub** – clonează-l cu comanda de mai jos sau descarcă arhiva din `Code` → `Download ZIP`:
 
-```bash
-# npm
-npm install
+   ```bash
+   git clone https://github.com/Ovidius-University/DAW26L.git
+   ```
 
-# pnpm
-pnpm install
+2. **Deschide folderul în Visual Studio Code** – `File` → `Open Folder...` și alege folderul `DAW26L`.
 
-# yarn
-yarn install
+3. **Deschide terminalul** – `Ctrl` + `J` (pe macOS: `Cmd` + `J`).
 
-# bun
-bun install
-```
+4. **Instalează pachetele**:
 
-## Development Server
+   ```bash
+   npm i
+   ```
 
-Start the development server on `http://localhost:3000`:
+5. **Pornește proiectul**:
 
-```bash
-# npm
-npm run dev
+   ```bash
+   npm run dev
+   ```
 
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Aplicația rulează la adresa `http://localhost:3000`.
