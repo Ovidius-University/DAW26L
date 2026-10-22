@@ -6,18 +6,32 @@ datasource db {
   provider = "postgresql"
 }
 
-model Post {
-  id        Int     @id @default(autoincrement())
-  title     String
-  content   String?
-  published Boolean @default(false)
-  author    User?   @relation(fields: [authorId], references: [id])
-  authorId  Int?
+model Brand {
+  id   Int    @id @default(autoincrement())
+  name String @unique
+  models Model[]
 }
 
-model User {
-  id    Int     @id @default(autoincrement())
-  email String  @unique
-  name  String?
-  posts Post[]
+model Model {
+  id      Int    @id @default(autoincrement())
+  name    String
+  brandId Int
+  brand   Brand @relation(fields: [brandId], references: [id])
+  cars    Car[]
+}
+
+model Car {
+  id       Int       @id @default(autoincrement())
+  title    String
+  km       Int
+  color    String
+  modelId  Int
+  model    Model   @relation(fields: [modelId], references: [id])
+  features Feature[]
+}
+
+model Feature {
+  id   Int    @id @default(autoincrement())
+  name String @unique
+  cars Car[]
 }
