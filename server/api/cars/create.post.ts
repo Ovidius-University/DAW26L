@@ -5,5 +5,8 @@ export default defineEventHandler(async (event) => {
     data: body
   })
 
-  return true
+  return {
+    type: "success",
+    data: body
+  }
 })
